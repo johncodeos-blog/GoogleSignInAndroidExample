@@ -3,6 +3,7 @@ package com.example.googlesigninexample
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -10,13 +11,11 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var mGoogleSignInClient: GoogleSignInClient
-    private val RC_SIGN_IN = 9001
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        google_login_btn.setOnClickListener {
+        val googleLoginButton = findViewById<Button>(R.id.google_login_btn)
+        googleLoginButton.setOnClickListener {
             signIn()
         }
     }
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             )
             // Signed in successfully
             val googleId = account?.id ?: ""
-            Log.i("Google ID",googleId)
+            Log.i("Google ID", googleId)
 
             val googleFirstName = account?.givenName ?: ""
             Log.i("Google First Name", googleFirstName)
@@ -104,5 +104,9 @@ class MainActivity : AppCompatActivity() {
                 "failed code=", e.statusCode.toString()
             )
         }
+    }
+
+    companion object {
+        const val RC_SIGN_IN = 9001
     }
 }

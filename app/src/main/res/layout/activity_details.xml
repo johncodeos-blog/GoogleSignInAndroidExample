@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,9 +11,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clipToPadding="false"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:clipToPadding="false">
+        android:paddingBottom="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,11 +28,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="ID"
-                android:textSize="22sp"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
@@ -41,33 +41,35 @@
 
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:id="@+id/google_id_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="Lorem Ipsum"
-                android:textSize="22sp"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="First Name"
-                android:textSize="22sp"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
@@ -75,17 +77,18 @@
 
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:id="@+id/google_first_name_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="Lorem Ipsum"
-                android:textSize="22sp"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
 
             <View
@@ -93,139 +96,147 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="Last Name"
-                android:textSize="22sp"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:id="@+id/google_last_name_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:gravity="center_horizontal"
                 android:text="Lorem Ipsum"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:gravity="center_horizontal"
                 android:text="Email"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:id="@+id/google_email_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:gravity="center_horizontal"
                 android:text="Lorem Ipsum"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:gravity="center_horizontal"
                 android:text="Profile Pic URL"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:id="@+id/google_profile_pic_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:gravity="center_horizontal"
                 android:text="Lorem Ipsum"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:gravity="center_horizontal"
                 android:text="ID Token"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
             <TextView
                 android:id="@+id/google_id_token_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:gravity="center_horizontal"
                 android:text="Lorem Ipsum"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" />
 
         </LinearLayout>
 

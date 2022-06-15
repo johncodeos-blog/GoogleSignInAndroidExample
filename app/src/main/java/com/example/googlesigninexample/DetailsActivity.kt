@@ -1,8 +1,8 @@
 package com.example.googlesigninexample
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_details.*
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class DetailsActivity : AppCompatActivity() {
 
@@ -18,12 +18,23 @@ class DetailsActivity : AppCompatActivity() {
         val googleAccessToken = intent.getStringExtra("google_id_token")
 
 
-        google_id_textview.text = googleId
-        google_first_name_textview.text = googleFirstName
-        google_last_name_textview.text = googleLastName
-        google_email_textview.text = googleEmail
-        google_profile_pic_textview.text = googleProfilePicURL
-        google_id_token_textview.text = googleAccessToken
+        val googleIdTextView = findViewById<TextView>(R.id.google_id_textview)
+        googleIdTextView.text = googleId
+
+        val googleFirstNameTextView = findViewById<TextView>(R.id.google_first_name_textview)
+        googleFirstNameTextView.text = googleFirstName
+
+        val googleLastNameTextView = findViewById<TextView>(R.id.google_last_name_textview)
+        googleLastNameTextView.text = googleLastName
+
+        val googleEmailTextView = findViewById<TextView>(R.id.google_email_textview)
+        googleEmailTextView.text = googleEmail
+
+        val googleProfilePicTextView = findViewById<TextView>(R.id.google_profile_pic_textview)
+        googleProfilePicTextView.text = googleProfilePicURL
+
+        val googleIdTokenTextView = findViewById<TextView>(R.id.google_id_token_textview)
+        googleIdTokenTextView.text = googleAccessToken
 
     }
 }
